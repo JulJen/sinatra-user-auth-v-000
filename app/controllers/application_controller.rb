@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/registrations/signup' do
-    erb :'/registrations/signup'
+    erb :/registrations/signup
   end
 
   post '/registrations' do
@@ -22,7 +22,6 @@ class ApplicationController < Sinatra::Base
     session[:id] = @user.id
 
     redirect '/users/home'
-binding.pry
   end
 
   get '/sessions/login' do
