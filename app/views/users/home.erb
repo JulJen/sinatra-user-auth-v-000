@@ -1,3 +1,12 @@
 "Welcome, <%=@user.name%>!"
 
 <a href="/sessions/logout">Log Out</a>
+
+
+<form action="/sessions/logout" method="POST">
+
+  <p>Email: <input type="text" name="email"></p>
+  <p>Password: <input type="password" name="password"></p>
+
+  <input id="log in" type="submit" value="Log In">
+</form>
